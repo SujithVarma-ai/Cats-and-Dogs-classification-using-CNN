@@ -148,6 +148,16 @@ Cat / Dog
 
 ## 🧠 CNN Building Blocks
 
+### Input Layer
+
+The input layer receives the input images and defines their dimensions.
+
+In this project, the input images have a size of:
+
+```text
+150 × 150 × 3
+```
+
 ### Convolution Layer
 
 The convolution layers extract visual features from the images, such as edges, textures, shapes, and patterns.
@@ -184,10 +194,20 @@ Sigmoid activation in the final output layer
 
 The fully connected layer, implemented using a Dense layer, learns higher-level representations from the features extracted by the convolutional layers.
 
-This project uses a Dense layer with:
-
-```bash
-512 neurons
-```
+This project uses a Dense layer with : 512 neurons
 
 and uses the ReLU activation function.
+
+### Output Layer
+
+The output layer produces the final classification result.
+
+Since this is a binary classification problem, the model uses one neuron with a sigmoid activation function:
+
+```bash
+Dense(1, activation='sigmoid')
+```
+
+The sigmoid output represents the probability of the input image belonging to one of the two classes:
+
+Cat / Dog
