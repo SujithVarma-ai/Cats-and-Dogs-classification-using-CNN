@@ -29,3 +29,25 @@ dataset, info = tfds.load(
     with_info=True,
     as_supervised=True
 )
+```
+
+### Classes
+
+The model performs binary classification between two classes:
+
+| Label | Class |
+|------:|-------|
+| 0 | Cat |
+| 1 | Dog |
+
+The class names are obtained from the dataset:
+
+```python
+class_names = info.features['label'].names
+```
+
+### Output
+
+```bash
+['cat','dog']
+```
