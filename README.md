@@ -145,3 +145,49 @@ Sigmoid
         ↓
 Cat / Dog
 ```
+
+## 🧠 CNN Building Blocks
+
+### Convolution Layer
+
+The convolution layers extract visual features from the images, such as edges, textures, shapes, and patterns.
+
+### Pooling Layer
+
+The pooling layer reduces the spatial dimensions of the feature maps while retaining important features.
+
+### Batch Normalization
+
+Batch normalization helps stabilize the learning process by normalizing the activations of the previous layer.
+
+### Dropout
+
+Dropout randomly deactivates a percentage of neurons during training to help reduce overfitting.
+
+### Flatten Layer
+
+The Flatten layer converts the extracted feature maps into a one-dimensional vector before passing them to the fully connected layer.
+
+In this model, the Flatten layer produces : 36,992 values
+
+### Activation Layer
+
+Activation functions introduce non-linearity into the neural network, allowing the model to learn complex patterns.
+
+This project uses:
+
+ReLU activation in the convolution and dense layers
+
+Sigmoid activation in the final output layer
+
+### Fully Connected Layer
+
+The fully connected layer, implemented using a Dense layer, learns higher-level representations from the features extracted by the convolutional layers.
+
+This project uses a Dense layer with:
+
+```bash
+512 neurons
+```
+
+and uses the ReLU activation function.
