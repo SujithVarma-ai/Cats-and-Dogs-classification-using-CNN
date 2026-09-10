@@ -73,3 +73,61 @@ Training images   : 18,611
 Validation images : 4,651
 Classes           : 2
 Batch size        : 32
+
+## 🏗️ CNN Architecture
+
+```bash
+Input Image
+150 × 150 × 3
+        ↓
+Conv2D
+32 filters, 3×3
+ReLU
+        ↓
+MaxPooling2D
+2×2
+        ↓
+Batch Normalization
+        ↓
+Dropout
+0.2
+        ↓
+Conv2D
+64 filters, 3×3
+ReLU
+        ↓
+MaxPooling2D
+2×2
+        ↓
+Batch Normalization
+        ↓
+Dropout
+0.2
+        ↓
+Conv2D
+128 filters, 3×3
+ReLU
+        ↓
+MaxPooling2D
+2×2
+        ↓
+Batch Normalization
+        ↓
+Dropout
+0.2
+        ↓
+Flatten
+        ↓
+Dropout
+0.2
+        ↓
+Dense
+512 neurons
+ReLU
+        ↓
+Dense
+1 neuron
+Sigmoid
+        ↓
+Cat / Dog
+```
