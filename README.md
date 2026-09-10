@@ -51,3 +51,14 @@ class_names = info.features['label'].names
 ```bash
 ['cat','dog']
 ```
+
+## 🔄 Data Preparation
+
+The dataset images are organized into class-specific directories:
+
+```text
+cats_vs_dogs/
+└── train/
+    ├── cat/
+    └── dog/
+```
