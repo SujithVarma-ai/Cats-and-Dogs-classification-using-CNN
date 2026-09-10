@@ -63,6 +63,20 @@ cats_vs_dogs/
     └── dog/
 ```
 
+## 🖼️ Image Preprocessing
+
+Images are resized to:
+
+```bash
+150 × 150 × 3
+```
+
+where:
+
+150 × 150 represents the image height and width
+
+3 represents the RGB color channels
+
 ## 📊 Training and Validation Data
 
 The dataset is divided using an 80/20 training-validation split.
