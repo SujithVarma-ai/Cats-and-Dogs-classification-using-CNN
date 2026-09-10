@@ -62,3 +62,14 @@ cats_vs_dogs/
     ├── cat/
     └── dog/
 ```
+
+## 📊 Training and Validation Data
+
+The dataset is divided using an 80/20 training-validation split.
+
+The notebook produces:
+
+Training images   : 18,611
+Validation images : 4,651
+Classes           : 2
+Batch size        : 32
